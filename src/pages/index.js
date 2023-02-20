@@ -1,8 +1,21 @@
+import Bachelors from "@/components/Bachelors";
+import Become from "@/components/Become";
+import Calender from "@/components/Calender";
+import Impact from "@/components/Impact";
+import Navbar from "@/components/Navbar";
+import News from "@/components/News";
+import Weare from "@/components/Weare";
+
 export default function Home() {
   return (
-    <div className="text-3xl font-bold underline bg-blue-600">
-      <h1>February challenge</h1>
-      <p>hello guys</p>
-    </div>
+   <>
+   <Navbar />
+   <Become />
+   <Bachelors />
+   <Impact />
+   <News />
+   <Calender /> 
+   <Weare />
+   </>
   )
 }
