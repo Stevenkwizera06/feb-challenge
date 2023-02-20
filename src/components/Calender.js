@@ -9,7 +9,7 @@ function Calender() {
     <div>
       <section className="px-5">
         <div className="max-w-7xl px-32 bg-white mx-auto">
-          <div className="grid grid-cols-2 items-center py-16">
+          <div className="grid grid-cols-2 sm:grid sm:grid-cols-1 items-center py-16">
             <div>
               <h1 className="text-[#0077b3] text-3xl">Calender</h1>
             </div>
@@ -26,7 +26,7 @@ function Calender() {
           </div>
 
           {/* next this in this section */}
-          <div className="grid grid-cols-4 items-center gap-6 py-16">
+          <div className="grid grid-cols-4 sm:grid sm:grid-cols-4 sm:space-x-24 items-center gap-6 py-16">
             {[1, 2, 3, 4].map((val, index) => {
               return (
                 <div className="text-xl">
@@ -59,7 +59,7 @@ function Calender() {
               <p className="text-white font-bold text-xl px-6 ">Working at VU Amsterdam?</p>
             </div>
             <div className="bg-white p-6 w-[22rem] ">
-              <p className="font-bold text-xl">Take a look at our vacancies!</p>
+              <p className="font-bold text-xl">visit the VU Master's Event</p>
             </div>
           </div>
         </div>

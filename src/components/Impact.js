@@ -1,6 +1,6 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { BsChevronLeft,BsChevronRight } from "react-icons/bs"
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 function Impact() {
   return (
@@ -53,17 +53,20 @@ function Impact() {
       </section>
       <section className="px-5">
         <div className="max-w-5xl mx-auto px-24 gap-10 bg-white py-20 grid grid-row-2">
-          {[1, 2].map((value, idx) => {
-            return (
-              // eslint-disable-next-line react/jsx-key
-              <div className="bg-white p-10 shadow-md">
-                <h1 className="text-2xl">Ukraine</h1>
-                <div className="mt-6">
-                  <p>Information and support</p>
-                </div>
+          <div className="flex justify-between bg-white p-10 shadow-md">
+            <div>
+              <h1 className="text-2xl text-green-400">Ukraine</h1>
+              <div className="mt-6">
+                <p>Information and support</p>
               </div>
-            )
-          })}
+            </div>
+            <AiOutlineArrowRight />
+          </div>
+
+          <div className="flex justify-between bg-white p-10 shadow-md">
+            <h1 className="text-2xl text-[#3b2171]">Corana</h1>
+            <AiOutlineArrowRight />
+          </div>
         </div>
       </section>
     </div>

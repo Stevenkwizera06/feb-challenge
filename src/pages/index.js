@@ -1,6 +1,7 @@
 import Bachelors from "@/components/Bachelors";
 import Become from "@/components/Become";
 import Calender from "@/components/Calender";
+import Footer from "@/components/Footer";
 import Impact from "@/components/Impact";
 import Navbar from "@/components/Navbar";
 import News from "@/components/News";
@@ -16,6 +17,7 @@ export default function Home() {
    <News />
    <Calender /> 
    <Weare />
+   <Footer />
    </>
   )
 }
