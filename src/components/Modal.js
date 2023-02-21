@@ -29,11 +29,11 @@ export default function Modal({ setShow }) {
           {[
             "Study at VU Amsterdam",
             "Research",
-            "About VU Amsterdam",
             "VU press office",
             "Alumni",
             "Student",
             "Employee",
+            
           ].map((e, i) => {
             return (
               // eslint-disable-next-line react/jsx-key

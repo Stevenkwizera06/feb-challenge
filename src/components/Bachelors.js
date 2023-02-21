@@ -2,7 +2,6 @@
 /* eslint-disable react/jsx-key */
 import React from "react";
 import { FaGraduationCap } from "react-icons/fa";
-// import { BsArrowRight } from "react-icons/ai";
 import { BsArrowRight, BsPuzzle } from "react-icons/bs";
 import { FaGlobeAfrica, FaMedal } from "react-icons/fa";
 
@@ -83,7 +82,7 @@ function Bachelors() {
       </section>
 
       <section className="px-2">
-        <div className="max-w-4xl mx-auto px-4  py-32 sm:py-10 bg-white items-center">
+        <div className="max-w-5xl mx-auto px-4  py-32 sm:py-10 bg-white items-center">
           <div className="bg-[#0077b3] max-w-5xl mx-auto py-16  grid grid-cols-2 sm:grid sm:grid-cols-1 space-y-3 ">
             <div className="flex items-center">
               <p className="text-white font-bold text-xl px-6 ">

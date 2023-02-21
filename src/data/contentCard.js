@@ -12,7 +12,7 @@ import { FaInstagramSquare, FaLinkedin } from "react-icons/fa";
 
 const Card = ({ data, icon }) => {
   return (
-    <div className=" w-[300px] h-[285px] p-5 shadow-lg bg-white flex flex-col justify-between">
+    <div className=" w-[316px] h-[285px] p-5 shadow-lg bg-white flex flex-col justify-between">
       <ul className="flex flex-col text-[#333333] leading-[30px] text-[18px]">
         {data.map((item, index) => (
           <li key={index}>

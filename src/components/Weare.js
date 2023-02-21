@@ -5,8 +5,8 @@ import Card from "../data/contentCard";
 const Weare = () => {
   return (
     <>
-    <section className="block lg:hidden">
-        <div className="max-w-5xl mx-auto overflow-hidden bg-white pb-12 grid">
+    <section className="block lg:hidden max-w-5xl mx-auto ">
+        <div className="max-w-5xl  overflow-hidden bg-white pb-12 grid">
           <div className="max-w-5xl mr-auto lg:mr-auto lg:py-0">
             <h1 className={`text-4xl lg:px-0 px-36 text-[#CC4100] pb-10 pt-20`}>We are VU Amsterdam</h1>
           </div>
@@ -66,9 +66,9 @@ const Weare = () => {
           </div>
         </div>
       </section>
-      <div className="flex  items-center justify-center max-w-5xl max-auto">
+      <div className="flex  items-center justify-center max-w-5xl mx-auto py-12">
         <div className="grid grid-cols-3 gap-4 sm:grid-cols-1">
-          <div className="flex flex-col gap-4 ">
+          <div className="flex flex-col gap-8 ">
             <h1 className="text-[38px] font-[300] leading-[56px] text-[#0077b3] mb-[15px]">
               VU main menu
             </h1>

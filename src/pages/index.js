@@ -9,15 +9,17 @@ import Weare from "@/components/Weare";
 
 export default function Home() {
   return (
-    <>
+   
+    <div className="bg-[#f2efed]">
       <Navbar />
       <Become />
       <Bachelors />
       <Impact />
       <News />
+      <Calender /> 
       <Weare />
-      {/* <Calender />  */}
       <Footer />
-    </>
+    
+    </div>
   );
 }

@@ -38,7 +38,7 @@ function Impact() {
               <p className="text-lg font-medium">Read more</p>
               <AiOutlineArrowRight className="flex items-center mt-2 "/>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center gap-4">
               <div className="flex items-center gap-4 sm:hidden">
                 <div class="h-6 w-6 rounded-full bg-red-500"></div>
                 <div class="h-3 w-3 rounded-full bg-red-500"></div>
@@ -46,7 +46,7 @@ function Impact() {
                 <div class="h-3 w-3 rounded-full bg-red-500"></div>
               </div>
 
-              <div className="flex bg-yellow-700 py-4 px-4 items-end ml-5 sm:-mt-24">
+              <div className="flex bg-yellow-700 py-4 px-4 items-end  sm:-mt-10">
                 <BsChevronLeft />
                 <BsChevronRight />
               </div>
@@ -55,7 +55,7 @@ function Impact() {
         </div>
       </section>
 
-      <section className="px-5">
+      <section className="">
         <div className="max-w-5xl w-full mx-auto px-24 sm:px-1 sm:my-9 gap-6 py-20 grid grid-row-2">
           <div className="flex justify-between w-full bg-white p-10 shadow-md">
             <div>

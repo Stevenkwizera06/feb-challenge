@@ -15,7 +15,7 @@ function News() {
               {[1, 2].map((value, idx) => {
                 return (
                   // eslint-disable-next-line react/jsx-key
-                  <div className="grid lg:hidden  grid-cols-7 gap-7 lg:mt-5 mt-10">
+                  <div className="grid   grid-cols-7 gap-7 lg:mt-5 mt-10">
                     <div className="col-span-4">
                       <img src="https://assets.vu.nl/d8b6f1f5-816c-005b-1dc1-e363dd7ce9a5/d8e771d2-c135-499c-a67c-d1da825f453b/robofinch%20def.png" className="aspect-video h-52" alt="" />
                     </div>

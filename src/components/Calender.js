@@ -1,71 +1,113 @@
-/* eslint-disable react/no-unescaped-entities */
-/* eslint-disable react/jsx-key */
-import React from "react";
-import { BiChevronDown } from "react-icons/bi";
-import { BsArrowRight } from "react-icons/bs"
+import Image from "next/image";
+import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
+import { GoChevronDown } from "react-icons/go"
 
-function Calender() {
+export default function Calendar() {
+  const headerData = [
+    {
+      text: "All categories",
+    },
+    {
+      text: "Date",
+    },
+  ];
+  const events = [
+    {
+      title: "PhD Defences",
+      date: "20 February 2023",
+      text: "PhD defence by T.J.H. Jonkers",
+    },
+    {
+      title: "PhD Defences",
+      date: "20 February 2023",
+      text: "PhD defence by T.J.H. Jonkers",
+    },
+    {
+      title: "PhD Defences",
+      date: "20 February 2023",
+      text: "PhD defence by T.J.H. Jonkers",
+    },
+    {
+      title: "PhD Defences",
+      date: "20 February 2023",
+      text: "PhD defence by T.J.H. Jonkers",
+    },
+    {
+      title: "PhD Defences",
+      date: "20 February 2023",
+      text: "PhD defence by T.J.H. Jonkers",
+    },
+    {
+      title: "PhD Defences",
+      date: "20 February 2023",
+      text: "PhD defence by T.J.H. Jonkers",
+    },
+    {
+      title: "PhD Defences",
+      date: "20 February 2023",
+      text: "PhD defence by T.J.H. Jonkers",
+    },
+    {
+      title: "PhD Defences",
+      date: "20 February 2023",
+      text: "PhD defence by T.J.H. Jonkers",
+    },
+    {
+      title: "PhD Defences",
+      date: "20 February 2023",
+      text: "PhD defence by T.J.H. Jonkers",
+    },
+    {
+      title: "PhD Defences",
+      date: "20 February 2023",
+      text: "PhD defence by T.J.H. Jonkers",
+    },
+  ];
   return (
-    <div>
-      <section className="px-5">
-        <div className="max-w-5xl px-32 bg-white mx-auto">
-          <div className="grid grid-cols-2 sm:grid sm:grid-cols-1 items-center py-16">
-            <div>
-              <h1 className="text-[#0077b3] text-3xl">Calender</h1>
+    <div className="bg-white  max-w-5xl mx-auto ">
+      <div className="flex justify-between px-5 sm:px-[30px]  py-[45px] gap-6 2xl:mx-[130px]">
+        <h2 className="text-[#0077b3] text-[38px] leading-[56px] font-light flex-1">
+          Calendar
+        </h2>
+        {headerData.map((val, i) => {
+          return (
+            <div
+              key={i}
+              className="flex-1 bg-white shadow-small flex justify-between py-2.5 px-5 items-center"
+            >
+              <span className="text-lg font-medium text-dark">{val.text}</span>
+              <GoChevronDown width={20} height={20} />
             </div>
-            <div className="flex gap-6">
-              <div className="flex justify-between py-2 px-3 border border-white shadow-md w-64 bg-white">
-                All categories
-                <BiChevronDown className="w-8 h-8" />
+          );
+        })}
+      </div>
+      <div className="px-5 sm:px-[30px] 2xl:mx-[130px]">
+        <div className="flex overflow-auto scrollbar-hide md:scrollbar-default">
+          {events.map((val, i) => {
+            return (
+              <div key={i} className={"min-w-[220px] mr-[75px]"}>
+                <Link
+                  href={"/"}
+                  className="underline font-light text-lg text-dark"
+                >
+                  {val.title}
+                </Link>
+                <h3 className="text-[#0077b3] text-lg font-bold">{val.date}</h3>
+                <p className="text-dark text-2xl font-light">{val.text}</p>
               </div>
-              <div className="flex justify-between py-2 px-3 border border-white shadow-md w-64">
-                Date
-                <BiChevronDown className="w-8 h-8" />
-              </div>
-            </div>
-          </div>
-
-          
-          <div className="grid grid-cols-4 sm:grid sm:grid-rows-1 sm:space-x-24 items-center gap-6 py-16">
-            {[1, 2, 3, 4].map((val, index) => {
-              return (
-                <div className="text-xl">
-                  <h1>PHD Devices</h1>
-                  <div className="mt-4">
-                    {[1, 2].map((e, idx) => {
-                      return (
-                        // eslint-disable-next-line react/jsx-key
-                        <div className="space-y-6">
-                          <h1 className="text-[#0077b3] text-xl font-bold">21 February 2023</h1>
-                          <p>PHD defence by T.J.H. Jonkers</p>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-          <div className="flex gap-4 justify-center items-center ">
-            <p className="text-2xl font-bold">View Calender</p>
-            <BsArrowRight className="flex items-center w-6 h-6"/>
-          </div>
+            );
+          })}
         </div>
-      </section>
-      <section className="px-2">
-        <div className="max-w-4xl mx-auto px-4  py-32 bg-white items-center">
-          <div className="bg-[#0077b3] max-w-5xl mx-auto py-16  grid grid-cols-2">
-            <div className="flex items-center">
-              <p className="text-white font-bold text-xl px-6 ">Working at VU Amsterdam?</p>
-            </div>
-            <div className="bg-white p-6 w-[22rem] ">
-              <p className="font-bold text-xl">visit the VU Master's Event</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+      <div className="flex justify-center">
+        <Link
+          href="/"
+          className="flex text-lg font-medium text-dark items-center gap-2 mt-28"
+        >
+          View calendar <BsArrowRight className={"w-4"} alt="" />
+        </Link>
+      </div>
     </div>
   );
 }
-
-export default Calender;
