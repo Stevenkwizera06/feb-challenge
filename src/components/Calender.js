@@ -8,7 +8,7 @@ function Calender() {
   return (
     <div>
       <section className="px-5">
-        <div className="max-w-7xl px-32 bg-white mx-auto">
+        <div className="max-w-5xl px-32 bg-white mx-auto">
           <div className="grid grid-cols-2 sm:grid sm:grid-cols-1 items-center py-16">
             <div>
               <h1 className="text-[#0077b3] text-3xl">Calender</h1>
@@ -25,8 +25,8 @@ function Calender() {
             </div>
           </div>
 
-          {/* next this in this section */}
-          <div className="grid grid-cols-4 sm:grid sm:grid-cols-4 sm:space-x-24 items-center gap-6 py-16">
+          
+          <div className="grid grid-cols-4 sm:grid sm:grid-rows-1 sm:space-x-24 items-center gap-6 py-16">
             {[1, 2, 3, 4].map((val, index) => {
               return (
                 <div className="text-xl">

@@ -1,32 +1,37 @@
+import React from "react";
+import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
 
-import React from 'react'
-
-function Footer() {
+const Footer = () => {
   return (
-    <div>
-         <section className="px-5">
-        <div className="max-w-5xl py-4 space-y-6 px-8 bg-[#0077b3] text-white mx-auto">
-          <div className="flex gap-5 ">
-            {["Privacy Statement", "Disclaimer", "Safety at VU Amsterdam", "Colofon", "Cookie Settings", "Web archive"].map((ok, index) => {
-              return (
-                // eslint-disable-next-line react/jsx-key
-                <div className="mt-4 flex gap-1 items-center">
-                  <h1 className="text-md font-medium tracking-wide whitespace-nowrap ">{ok}</h1>
-                  <svg Name="fill-[#000000]" xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 24 24" fill="#000000">
-                    <path d="M20 12L4 12M20 12L14 18M20 12L14 6" stroke="white" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </div>
-              )
-            })}
-          </div>
-          <div className="font-medium">
-            <h1>Copyright &copy;
-              2023 - Vrije Universiteit Amsterdam</h1>
-          </div>
-        </div>
-      </section>
+    <div className="sm:px-4 ">
+      <div className="text-white font-[300] py-[30px]  mx-auto bg-[#0077b3] max-w-5xl">
+        <ul className="items-center gap-4 leading-[28px] flex flex-wrap px-8">
+          {[
+            { title: "Privacy Statement", link: "privacy" },
+            { title: "Disclaimer", link: "disclaimer" },
+            {
+              title: "Safety at VU Amsterdam",
+              link: "safety",
+            },
+            { title: "Colofon", link: "colofon" },
+            { title: "Cookie Settings", link: "cookie" },
+            { title: "Web archive", link: "web" },
+          ].map((item, index) => (
+            <li key={index}>
+              <Link href={item.link} className="flex items-center gap-2">
+                <span>{item.title}</span>
+                <BsArrowRight className="leading-[16px]" />
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <p className="leading-[27px] mx-auto px-8">
+          Copyright © 2023 - Vrije Universiteit Amsterdam
+        </p>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

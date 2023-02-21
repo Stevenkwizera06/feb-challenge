@@ -9,15 +9,15 @@ import Weare from "@/components/Weare";
 
 export default function Home() {
   return (
-   <>
-   <Navbar />
-   <Become />
-   <Bachelors />
-   <Impact />
-   <News />
-   <Calender /> 
-   <Weare />
-   <Footer />
-   </>
-  )
+    <>
+      <Navbar />
+      <Become />
+      <Bachelors />
+      <Impact />
+      <News />
+      <Weare />
+      {/* <Calender />  */}
+      <Footer />
+    </>
+  );
 }
